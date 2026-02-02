@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Rubik-bold'; /* Use the actual font name */
+    src: url('./assets/fonts/Rubik-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Rubik';
+    src: url('./assets/fonts/Rubik-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Rubik-200';
+    src: url('./assets/fonts/Rubik-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Rubik-italic';
+    src: url('./assets/fonts/Rubik-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
+
+body {
+	margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+/* 
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	box-sizing: border-box;
+}
+
+body * {
+	box-sizing: border-box;
+    
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Media query for mobile devices (typically max-width of 768px) */
+@media only screen and (max-width: 768px) {
+	.dashboard-container {
+		/* Add your mobile-specific styles here */
+		
+	}
+
+	.float-btn {
+		width: 100%;
+		font-size: 16px;
+	}
+}
+
+

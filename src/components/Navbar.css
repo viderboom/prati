@@ -1,0 +1,43 @@
+.navbar-container {
+	font-family: 'Rubik';
+
+	background-color: var(--primary-color);
+	height: 68px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-container .landscape-layout {
+	padding: 0;
+}
+.navbar-container .landscape-layout ul {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+	color: var(--bg-color);
+}
+
+.nav-item {
+	font-family: 'Rubik';
+	transition: all ease-in 0.2s;
+	cursor: pointer;
+	transform-origin: center;
+}
+
+.nav-item:hover {
+	color: lightgray;
+	transform: scale(1.1);
+}
+
+/* Style for the disabled (active/checked) state */
+.nav-item.nav-disabled {
+	color: var(--bg-color);
+	font-size: 1.4rem;
+	font-weight: bold;
+	pointer-events: none;
+	transform: none;
+}
+
+.navbar-container .portrait-layout {
+    margin: 0 0 0 auto;
+}

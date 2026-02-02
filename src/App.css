@@ -1,0 +1,203 @@
+:root {
+	--primary-color: rgb(83, 183, 216);
+	--secondary-color: rgb(24, 54, 134);
+	
+    --primary-hover-color: rgb(75, 167, 198);
+
+	--event-color: rgb(172, 89, 108);
+
+	--paid-color: #3cb371;
+	--cancel-color: #e74c3c;
+
+	--bg-color: #f9f9f9;
+}
+
+.App {
+	background-color: var(--bg-color);
+	height: 100vh;
+}
+
+li {
+	list-style: none;
+
+}
+button {
+	cursor: pointer;
+    font-family: 'Rubik';
+	transition: all 0.3s ease;
+	transform-origin: center;
+}
+button:disabled {
+	cursor: default;
+	transition: none;
+	box-shadow: none;
+}
+button:disabled:hover {
+	background-color: gray;
+	transform: none;
+	box-shadow: none;
+}
+/* ______________PAGE_____________________ */
+.page-layout {
+	direction: rtl;
+	max-width: 800px;
+	margin: auto;
+	padding: 0 32px;
+}
+
+.page-title {
+	color: var(--secondary-color);
+}
+
+/* _____________________TEXT______________________ */
+
+.canceled {
+	color: white;
+	padding: 4px 12px;
+	font-size: 1em;
+	text-align: center;
+
+	border-radius: 4px;
+	background-color: var(--cancel-color);
+}
+.error {
+	color: var(--cancel-color);
+	padding: 4px 12px;
+	font-size: 1em;
+}
+/*_________________ BUTTONS _________________ */
+.btn-primary {
+	display: block;
+
+	padding: 8px 12px;
+	border-radius: 8px;
+	font-size: 1em;
+
+	transition: transform 0.3s;
+	transform-origin: center;
+
+	color: #fff;
+	background-color: #3498db;
+	border: none;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover,
+.btn-small:hover {
+	background-color: var(--primary-hover-color);
+	transform: scale(1.1); /* Slight scale-up */
+}
+.btn-small {
+	display: block;
+	padding: 4px 12px;
+	border-radius: 4px;
+	font-size: 1rem;
+
+	transition: transform 0.3s;
+	transform-origin: center;
+
+	color: #fff;
+	background-color: #3498db;
+	background-color: var(--primary-color);
+
+	border: none;
+
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dismiss-btn {
+	color: var(--primary-color);
+	background-color: white;
+	border: 1px solid var(--primary-color);
+}
+.dismiss-btn:hover {
+	background-color: white;
+	/* border: 2px solid var(--primary-color); */
+}
+.approve-btn,
+.dismiss-btn {
+	display: inline;
+}
+
+.btn-paid {
+	background-color: #3cb371; /* Green color for 'paid' */
+}
+
+.btn-paid:hover {
+	background-color: #31965d; /* Darker green on hover */
+}
+
+.btn-cancel {
+	background-color: #e74c3c; /* Red color for cancel */
+}
+
+.btn-cancel:hover {
+	background-color: #c0392b; /* Darker red on hover */
+}
+
+.float-btn {
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+}
+
+.link-btn {
+	color: #3498db;
+	cursor: pointer;
+
+	font-family: 'Rubik-bold';
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* __________________FORM STUFF_________________________________ */
+.custom-checkbox {
+	cursor: pointer;
+}
+.custom-checkbox > span {
+	padding: 0%;
+}
+
+/* ___________MUI_________________ */
+.custom-dialog .MuiDialog-paper {
+	border-radius: 12px;
+	direction: rtl;
+}
+
+.custom-dialog .MuiTextField-root {
+	margin-top: 8px;
+}
+
+/*____________ PORTRAIT VIEW _______________________________ */
+
+@media only screen and (max-width: 960px) {
+	.fc .fc-toolbar-title {
+		/* font-size: 1.2rem; */
+	}
+}
+
+/* Media query for portrait orientation */
+@media only screen and (orientation: portrait) {
+	.page-layout {
+		padding: 0 4px;
+	}
+	.dashboard-container {
+		font-size: 16px;
+	}
+
+	/* .float-btn {
+		width: 100%;
+		font-size: 18px;
+	} */
+
+	.fc .fc-toolbar-title {
+		font-size: 1.2rem;
+	}
+}

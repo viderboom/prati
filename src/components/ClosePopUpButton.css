@@ -1,0 +1,11 @@
+.close {
+	display: flex;
+	width: 100%;
+	background-color: white;
+
+    margin-bottom: 12px;
+}
+
+.close img {
+	cursor: pointer;
+}

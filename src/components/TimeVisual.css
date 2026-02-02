@@ -1,0 +1,27 @@
+.time-visual {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	text-align: center;
+
+}
+
+.time-visual__date {
+	font-size: 1.2rem;
+	font-family: rubik;
+	width: 100%;
+
+    padding: 6px;
+}
+.time-visual__day-time {
+	display: flex;
+    justify-content: center;
+	gap: 4px;
+
+	font-family: rubik-200;
+	font-size: 1.4rem;
+
+	background-color: rgb(44, 45, 45);
+	color: white;
+	padding: 8px;
+}

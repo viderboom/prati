@@ -1,0 +1,70 @@
+/* Layout & Container */
+.settings-container {
+	/* background-color: aqua; */
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.settings-section {
+    width: fit-content;
+
+}
+
+/* Input Fields */
+.settings-section label {
+	display: flex;
+	gap: 4px;
+	flex-direction: column;
+	margin-bottom: 24px;
+	font-size: 1rem;
+    
+}
+.settings-section small{
+display: inline;
+}
+.settings-section .input-field {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+	margin-top: 4px;
+}
+
+.settings-section button{
+    justify-self: flex-end;
+    margin-top: 24px;
+}
+/* Date Picker Container */
+.date-picker-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+/* Vacation Form */
+.vacation-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.vacation-form-actions {
+	display: flex;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+/* Modal Styling */
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

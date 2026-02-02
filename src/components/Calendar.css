@@ -1,0 +1,59 @@
+
+
+.calendar-container .fc-event {
+	cursor: pointer;
+
+	/* border: 1px solid pink;  */
+	box-shadow: none;
+	padding: 2px 2px;
+
+	font-size: 0.8rem;
+}
+
+
+
+.event-title {
+	font-family: Rubik-italic;
+	font-size: 0.8em;
+	margin-bottom: 6px;
+}
+
+.recurring-event {
+	background-color: var(--event-color);
+	border: none;
+}
+
+.one-time-event {
+	background-color: #ed7a97 !important;
+	border: none;
+	color: #fff; /* Optional: Ensure text is readable */
+}
+/* .group-event {
+	background-color: #378006 !important;
+    border: none;
+} */
+
+/* Applies minimum height to time slots in timeGrid view */
+.calendar-container .fc-timegrid-slot {
+	height: 30px;
+	/* Adjust to your preference */
+}
+
+/* Optional: Adjust header cell height if needed */
+.calendar-container > .fc-col-header-cell {
+	/* height: 50px;  */
+}
+
+/* Optional: Adjust for day labels in week view */
+.calendar-container > .fc-timegrid-axis {
+	height: 20px; /* Adjust row height for day labels */
+}
+
+
+
+/*_______ Media query for portrait orientation __________________________*/
+@media only screen and (orientation: portrait) {
+    .calendar-container{
+        padding: 0 12px;   
+       }
+}
