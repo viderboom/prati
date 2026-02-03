@@ -1,2 +1,16 @@
 node_modules/
 *.local
+
+# env / secrets
+.env
+.env.*
+*.env
+.runtimeconfig.json
+
+# service account keys 
+*serviceAccount*.json
+*.pem
+
+# logs
+firebase-debug.log*
+npm-debug.log*
